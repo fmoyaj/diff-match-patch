@@ -416,7 +416,7 @@ class diff_match_patch:
       lineStart = 0
       lineEnd = -1
       while lineEnd < len(text) - 1:
-        lineEnd = text.find('\n', lineStart)
+        lineEnd = text.find(' ', lineStart)
         if lineEnd == -1:
           lineEnd = len(text) - 1
         line = text[lineStart:lineEnd + 1]
