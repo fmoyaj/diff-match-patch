@@ -491,7 +491,7 @@ class DiffMatchPatch {
     // text.split('\n') would would temporarily double our memory footprint.
     // Modifying text would create many large strings to garbage collect.
     while (lineEnd < text.length - 1) {
-      lineEnd = text.indexOf('\n', lineStart);
+      lineEnd = text.indexOf(' ', lineStart);
       if (lineEnd == -1) {
         lineEnd = text.length - 1;
       }
