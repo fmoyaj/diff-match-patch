@@ -627,7 +627,7 @@ namespace DiffMatchPatch {
       // text.split('\n') would would temporarily double our memory footprint.
       // Modifying text would create many large strings to garbage collect.
       while (lineEnd < text.Length - 1) {
-        lineEnd = text.IndexOf('\n', lineStart);
+        lineEnd = text.IndexOf(' ', lineStart);
         if (lineEnd == -1) {
           lineEnd = text.Length - 1;
         }
