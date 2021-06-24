@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name = 'alternative',
+    name = 'diff-match-patch',
     version = '0.1.0',
     url = '',
     description = '',
